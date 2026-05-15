@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visszajelzés - Leeds United magyar szemmel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+  <a class="skip-link" href="#tartalom">Ugrás a fő tartalomra</a>
+  <input class="contrast-toggle" type="checkbox" id="nagybetus" aria-label="Nagy kontrasztú, nagybetűs nézet bekapcsolása">
+  <div class="site-wrap">
+    <header class="site-header py-4">
+      <div class="container-lg">
+        <h1 class="site-title">Leeds United - magyar szemmel</h1>
+        <p class="tagline">Visszajelzés és kapcsolatfelvétel.</p>
+        <label class="contrast-control" for="nagybetus">Váltás a normál és a nagy kontrasztú nézet között</label>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md" aria-label="Főmenü">
+      <div class="container-lg">
+        <span class="navbar-brand">Főmenü</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fomenu" aria-controls="fomenu" aria-expanded="false" aria-label="Menü megnyitása">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="fomenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
+            <li class="nav-item"><a class="nav-link" href="erdekessegek.html">Érdekességek</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="visszajelzes.html">Visszajelzés</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="tartalom" class="container-lg">
+      <nav aria-label="Helyzetjelző navigáció">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" title="Ugrás a Kezdőlapra">Kezdőlap</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Visszajelzés</li>
+        </ol>
+      </nav>
+
+      <section class="form-card" aria-labelledby="urlapcim">
+        <h2 id="urlapcim">Felkeltettem az érdeklődésed a Leeds Uniteddel kapcsolatban?</h2>
+        <p>Töltsd ki az alábbi űrlapot! A csillaggal jelölt mezők kitöltése kötelező.</p>
+        <p class="required-note">Az űrlap e-mailben küldhető el, ezért az elküldéskor az alapértelmezett levelezőprogram nyílhat meg.</p>
+
+        <form action="mailto:dominik.raksai@gmail.com" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label class="form-label" for="nev">Név *</label>
+            <input class="form-control" type="text" id="nev" name="nev" size="35" maxlength="80" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="velemeny">Véleményed *</label>
+            <textarea class="form-control" id="velemeny" name="velemeny" cols="55" rows="6" maxlength="1100" required></textarea>
+          </div>
+
+          <fieldset class="mb-3">
+            <legend>Melyik topligát szereted a legjobban?</legend>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="topliga" id="angol" value="angol">
+              <label class="form-check-label" for="angol">angol</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="topliga" id="olasz" value="olasz">
+              <label class="form-check-label" for="olasz">olasz</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="topliga" id="nemet" value="német">
+              <label class="form-check-label" for="nemet">német</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="topliga" id="spanyol" value="spanyol">
+              <label class="form-check-label" for="spanyol">spanyol</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="topliga" id="francia" value="francia">
+              <label class="form-check-label" for="francia">francia</label>
+            </div>
+          </fieldset>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="hirlevel" name="hirlevel" value="igen">
+            <label class="form-check-label" for="hirlevel">Érdekelne egy hírlevél a Leeds Unitedről.</label>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-primary" type="submit">Visszajelzés elküldése</button>
+            <button class="btn btn-outline-secondary" type="reset">Űrlap alaphelyzetbe állítása</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="aside-card" aria-labelledby="adatkezeles">
+        <h2 id="adatkezeles">Megjegyzés</h2>
+        <p>Az űrlap célja egyszerű visszajelzés küldése. A mezők címkéi közvetlenül a hozzájuk tartozó mezők mellett vagy felett szerepelnek, hogy az űrlap könnyen áttekinthető legyen.</p>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-lg">
+        <p>Készítette: Ráksai Dominik</p>
+        <p><a class="footer-link" href="mailto:dominik.raksai@gmail.com">dominik.raksai@gmail.com</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

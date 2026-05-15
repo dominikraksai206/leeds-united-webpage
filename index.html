@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kezdőlap - Leeds United magyar szemmel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+  <a class="skip-link" href="#tartalom">Ugrás a fő tartalomra</a>
+  <input class="contrast-toggle" type="checkbox" id="nagybetus" aria-label="Nagy kontrasztú, nagybetűs nézet bekapcsolása">
+  <div class="site-wrap">
+    <header class="site-header py-4">
+      <div class="container-lg">
+        <h1 class="site-title">Leeds United - magyar szemmel</h1>
+        <p class="tagline">Egy angol klub története, jelene és magyar szurkolói szemmel is érdekes világa.</p>
+        <label class="contrast-control" for="nagybetus">Váltás a normál és a nagy kontrasztú nézet között</label>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md" aria-label="Főmenü">
+      <div class="container-lg">
+        <span class="navbar-brand">Főmenü</span>       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fomenu" aria-controls="fomenu" aria-expanded="false" aria-label="Menü megnyitása">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="fomenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a></li>
+            <li class="nav-item"><a class="nav-link" href="erdekessegek.html">Érdekességek</a></li>
+            <li class="nav-item"><a class="nav-link" href="visszajelzes.html">Visszajelzés</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="tartalom" class="container-lg">
+      <nav aria-label="Helyzetjelző navigáció">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Kezdőlap</li>
+        </ol>
+      </nav>
+
+      <section class="hero mb-4" aria-labelledby="fejezetek">
+        <h2 id="fejezetek">Navigáció a fejezetek között</h2>
+        <ol>
+          <li><a href="#klubrol">Amit tudni érdemes a klubról</a></li>
+          <li><a href="#tortenet">A Leeds United létrejötte, legsikeresebb időszaka</a></li>
+          <li><a href="#ma">Hol tart ma a klub?</a></li>
+          <li><a href="#forrasok">Források</a></li>
+        </ol>
+      </section>
+
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-xl-8">
+          <article class="content-card">
+            <h2 id="klubrol">Amit tudni érdemes a klubról</h2>
+            <div class="row g-4 align-items-center">
+              <div class="col-12 col-md-4">
+                <figure class="logo-figure">
+                  <a class="figure-link" href="images/leedslogo.png">
+                    <img class="thumbnail" src="images/leedslogo_thumb.png" alt="A Leeds United címere sárga és kék színekkel.">
+                  </a>
+                  <figcaption>A Leeds United címere. Kattints a képre a nagyobb nézethez.</figcaption>
+                </figure>
+              </div>
+              <div class="col-12 col-md-8">
+                <p>A <strong>Leeds United FC</strong> egy angol profi labdarúgóklub az angol első osztályú labdarúgó bajnokságban, a <span lang="en">Premier League</span>-ben. Székhelye az angliai Leedsben található, 1919-ben alakult a klub. Hazai mérkőzéseit Leeds legnagyobb stadionjában, a közel negyvenezer férőhelyes <span lang="en"><strong>Elland Road</strong></span>-on játssza.</p>
+                <p>Szövetségi kapitánya a német Daniel Farke. A csapat 3-szoros angol bajnok, 1-szeres angol kupa- és Ligakupa-győztes, 2-szeres angol Szuperkupa-győztes. Nemzetközi porondon 1975-ben volt a legeredményesebb, amikor a csapat a Bajnokok Ligája döntőjében, a Bayern München ellen, ezüstérmet szerzett.</p>
+              </div>
+            </div>
+
+            <div class="table-wrapper">
+              <table>
+                <caption>
+                  <details>
+                    <summary>A klub adatai</summary>
+                    A táblázatban a klubra vonatkozó legfontosabb adatok olvashatók.
+                  </details>
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">Teljes név</th>
+                    <td><span lang="en">Leeds United Football Club</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Alapítva</th>
+                    <td>1919. október 17.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Stadion és befogadóképesség</th>
+                    <td><span lang="en">Elland Road</span>, 37645 fő</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <figure>
+              <img src="images/ellandroad.png" alt="A Leeds United stadionja, az Elland Road oldalnézetből">
+              <figcaption><span lang="en">Elland Road</span>.</figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <aside class="col-12 col-xl-4" aria-labelledby="gyors">
+          <div class="aside-card">
+            <h2 id="gyors">Gyors áttekintés</h2>
+            <ul class="fact-list">
+              <li><strong>Klub:</strong><span lang="en"> Leeds United Football Club</span></li>
+              <li><strong>Alapítás:</strong> 1919</li>
+              <li><strong>Otthon:</strong><span lang="en"> Elland Road</span></li>
+              <li><strong>Színek:</strong> fehér, sárga és kék</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <section id="tortenet" class="content-card wide-reading">
+        <h2>A Leeds United létrejötte, legsikeresebb időszaka</h2>
+        <article>
+          <h3>A kezdetek</h3>
+          <p>1904-ben <span lang="en">Leeds City</span> FC néven alapítottak futballklubot, amelyet 1919-ben felszámoltak azzal a váddal, hogy illegális kifizetéseket eszközöltek a játékosok irányába az első világháború alatt. Az átformálódó és újraalakuló gárda a Leeds United nevet kapta, így hivatalosan 1919-ben jött létre a klub.</p>
+          <p>A <span lang="en">Huddersfield Town</span> akkori elnöke támogatta a klubot, valamint a két klub egyesítését is, ennek mintájára kapta a Leeds is a kék-fehér mezszínt. Később a Real Madrid hatására tiszta fehérre váltottak. A sárga és kék színek az idegenbeli szerelésben maradtak meg, ma viszont már mindhárom szín megtalálható a csapat mezén.</p>
+        </article>
+        <article>
+          <h3>A „nyerő széria”</h3>
+          <p>1961-ben a Leeds United vezetőedzője Donald „Don” Revie lett. Az új tréner első éve igen nehéz körülmények közt zajlott, kis híján ki is estek az időközben átszerveződött ligarendszer harmadik osztályába. A zseniális szakember hamar megfordította a rossz szériát, feljuttatta csapatát az élvonalba, ahol 1965 és 1974 közt nem végeztek a negyediknél rosszabb pozícióban.</p>
+          <p>1968/69-ben első bajnoki aranyérmüket ünnepelhették, melyet 1973/74-ben újabb siker követett. Más sorozatokban is jól szerepeltek: 1968-ban Ligakupát, 1972-ben FA-kupát nyertek, 1968-ban és 1971-ben pedig elhódították a Vásárvárosok kupáját. <em>Kétségkívül Don Revie a korszak legjobb angol csapatát építette fel.</em></p>
+          <figure class="text-center">
+            <img src="images/szobor.png" alt="Don Revie szobra Leedsben">
+            <figcaption>Don Revie szobra.</figcaption>
+          </figure>
+          <p>A '70-es éveknek, illetve az azt követő évtizedeknek a napjaink Leeds Unitedjához vezető sikereiről és történetéről <a href="https://www.leedsunited.com/en/club-honours" target="_blank">a Leeds United történetét bemutató hivatalos oldalon</a> olvashatnak részletesen.</p>
+        </article>
+      </section>
+
+      <section id="ma" class="content-card wide-reading">
+        <h2>Hol tart ma a klub?</h2>
+        <p>A Leeds a 2025-26-os szezon óta játszik újra a <span lang="en">Premier League</span>-ben, 2 évnyi másodosztályban eltöltött idő után. A klub felnőttcsapatának kerete 26 játékosból áll, ebből 20 légiós és 11 valamelyik ország válogatottjának a tagja.</p>
+        <p>Posztokat tekintve 4 kapus, 8 hátvéd, 8 középpályás és 7 csatár játszik a csapatban. A Transfermarkt nevű, futballtranzakciókkal foglalkozó weboldal adatai alapján ennek a keretnek a piaci értéke összesen kereken 321 millió euró. A csapatkapitány a walesi válogatott Ethan Ampadu, az első számú kapus a brazil Lucas Perri, az idei szezonban legtöbb góllal rendelkező játékos pedig az angol középcsatár, Dominic Calvert-Lewin.</p>
+        <p>A klub jelenlegi adatainak, játékoskeretének és szakmai stábjának további részleteiről <a href="https://www.transfermarkt.com/leeds-united/startseite/verein/399" target="_blank">a Leeds United Transfermarkt-adatlapján</a> tájékozódhatnak.</p>
+      </section>
+
+      <section id="forrasok" class="content-card wide-reading">
+        <h2>Források</h2>
+        <ul class="source-list">
+          <li><a href="https://hu.wikipedia.org/wiki/Leeds_United_FC" target="_blank">Leeds United FC szócikk a Wikipédián</a></li>
+          <li><a href="https://www.leedsunited.com/" target="_blank">A Leeds United hivatalos honlapja</a></li>
+          <li><a href="https://www.transfermarkt.com/leeds-united/startseite/verein/399" target="_blank">A Leeds United Transfermarkt-adatlapja</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-lg">
+        <p>Készítette: Ráksai Dominik</p>
+        <p><a class="footer-link" href="mailto:dominik.raksai@gmail.com">dominik.raksai@gmail.com</a></p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

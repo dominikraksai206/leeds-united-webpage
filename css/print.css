@@ -1,0 +1,69 @@
+@media print {
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    color: #000000;
+    background: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.35;
+  }
+
+  .site-header,
+  .navbar,
+  .breadcrumb,
+  .skip-link,
+  .contrast-control,
+  .site-footer,
+  aside,
+  video,
+  .carousel,
+  .btn {
+    display: none !important;
+  }
+
+  main,
+  .container,
+  .content-card,
+  .hero,
+  .form-card {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: #ffffff !important;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #000000;
+    page-break-after: avoid;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  a[href^="http"]::after,
+  a[href^="mailto"]::after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+  }
+
+  img {
+    max-width: 7cm !important;
+    height: auto !important;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+}
